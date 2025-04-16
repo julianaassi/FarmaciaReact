@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import './App.css'
 import ListaCategoria from './components/categoria/listacategoria/ListaCategoria'
 
+
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/categoria" element={<ListaCategoria />} />
+              <Route path="/categorias" element={<ListaCategoria />} />
             </Routes>
           </div>
           <Footer />
