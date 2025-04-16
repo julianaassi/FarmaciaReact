@@ -1,8 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+import './App.css'
+import CadastrarCategoria from './components/cadastrarcategoria/CadastrarCategoria'
+import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
+import ListaCategoria from './components/categoria/listacategoria/ListaCategoria'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
-import './App.css'
+
+
 
 function App() {
   return (
@@ -13,6 +19,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/categorias" element={<ListaCategoria />} />
+              <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
+              <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
             </Routes>
           </div>
           <Footer />
